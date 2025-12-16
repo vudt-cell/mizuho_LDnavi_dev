@@ -1,0 +1,280 @@
+/* CSS for section section:Header */
+.top-container {
+    max-width: var(--top-max-width);
+    margin: auto;
+}
+
+.site-header {
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 8px;
+}
+
+.page-wrapper {
+    max-width: 375px;
+    margin: 0 auto;
+    background-color: var(--color-white);
+    overflow: hidden;
+}
+
+.site-header .page-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 39px;
+}
+
+.site-header .logo img {
+    display: block;
+    width: 77px;
+    height: 39px;
+}
+
+/* CSS for section section:Hero */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 588px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--gradient-hero);
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.hero-background-container {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 568px;
+    overflow: hidden;
+}
+
+.hero-background-img {
+    position: absolute;
+    width: 691px;
+    height: 616.96px;
+    top: 118px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding-top: 20px;
+}
+
+.hero-icon {
+    width: 192px;
+    height: 85px;
+}
+
+.hero-title {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--color-primary-dark-blue);
+}
+
+/* CSS for section section:Steps */
+.steps-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.step-card {
+    width: 100%;
+    min-height: 542px;
+    background: var(--gradient-step);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    overflow: hidden;
+}
+
+.step-card-3 {
+    background: var(--gradient-features);
+    padding-bottom: 40px;
+    margin-top: -120px;
+}
+
+.step-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.step-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #gap: 10px;
+}
+
+.step-label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--color-secondary-light-blue);
+}
+
+.step-number {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    color: var(--color-secondary-light-blue);
+}
+
+.step-title {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color-primary-medium-blue);
+}
+
+.step-description {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--color-primary-medium-blue);
+}
+
+.step-image-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.step-image-container img {
+    max-width: none;
+}
+
+/* CSS for section section:Features */
+.features-section {
+    background: var(--gradient-features);
+    padding: 0 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.features-intro {
+    text-align: center;
+}
+
+.features-intro-title {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color-primary-medium-blue);
+}
+
+.features-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin-top: 25px;
+    padding: 0 20px;
+}
+
+.feature-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 24px 20px 32px 20px;
+    backdrop-filter: blur(1px);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.feature-title {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color-primary-medium-blue);
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.feature-image {
+    max-width: 136px;
+    height: auto;
+}
+
+.feature-description {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--color-text-dark);
+    width: 100%;
+}
+
+/* CSS for section section:Footer */
+.site-footer-cta {
+    background-color: var(--color-white);
+    padding: 16px;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    border-top: 1px solid #eee;
+}
+
+.footer-container {
+    max-width: 343px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: var(--color-link-blue);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-decoration: underline;
+}
+
+.link-icon {
+    width: 20px;
+    height: 20px;
+}
