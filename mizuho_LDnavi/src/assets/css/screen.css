@@ -1,0 +1,148 @@
+.modal-custom {
+    width: auto;
+    max-width: var(--modal-max-width);
+    margin: auto;
+}
+
+.modal-custom .modal-body {
+    width: 100%;
+    margin: auto;
+    padding: 24px;
+}
+
+.px-32 {
+    padding: 0 32px;
+}
+
+.gap-12 {
+    gap: 12px;
+}
+
+.modal-content {
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+}
+
+.step-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    max-width: 105px;
+    height: 27px;
+    padding: 8px 12px;
+    background-color: #CADFEF;
+    border-radius: 10px;
+    color: #000066;
+    opacity: 80%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.step-img-container {
+    height: 320px;
+}
+
+.step-img-container img {
+    object-fit: contain;
+}
+
+.first-step {
+    background-color: #F4CE62;
+    font-size: 16px;
+}
+
+.step-content-container {
+
+    height: 165px;
+}
+
+.step-title {
+    font-size: 20px;
+}
+
+.step-content {
+    font-size: 16px;
+    opacity: 80%;
+}
+
+#stepNextBtn,
+#resultNextBtn {
+    font-size: 18px;
+}
+
+.carousel-indicators [data-bs-target] {
+    flex: 0 1 auto;
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: 1px solid #285AE1;
+    opacity: 1;
+    border-radius: 50%;
+    transition: opacity .6s ease-in-out;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: #285AE1;
+}
+
+.modal-btn-close {
+    font-size: 14px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: var(--color-link-blue);
+}
+
+.stepNextBtn {
+    margin: 0 32px;
+}
+
+@media (max-width: 768px) {
+    .modal-custom {
+        padding: 0 16px;
+    }
+
+    .step {
+        font-size: 14px;
+        height: 26px;
+    }
+
+    .step-img {
+        height: 375px;
+    }
+
+    .first-step {
+        background-color: #FFD468;
+        font-size: 14px;
+    }
+
+    .step-title {
+        font-size: 18px;
+    }
+
+    .step-content-container {
+        height: 155px;
+    }
+
+    .step-content {
+        font-size: 14px;
+    }
+
+    .stepNextBtn {
+        margin: 0;
+    }
+}

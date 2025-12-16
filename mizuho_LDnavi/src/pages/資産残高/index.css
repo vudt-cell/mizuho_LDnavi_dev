@@ -1,0 +1,107 @@
+.screen-content-container {
+    flex-direction: column;
+    padding: 0;
+}
+
+.screen-header-container {
+    height: 64px;
+}
+
+.screen-header-content {
+    width: 95%;
+    background-image: none;
+    border-bottom-right-radius: 25px;
+}
+
+.chart-container {
+    width: 100%;
+}
+
+.chart {
+    width: 100%;
+    min-height: 65vh;
+}
+
+.chart-data {
+    background-color: #F3F3F3;
+    border-radius: 12px;
+}
+
+.chart-icon {
+    width: 12px;
+    height: 8px;
+    border-radius: 2px;
+}
+
+.blue {
+    background-color: #285AE1;
+}
+
+.green {
+    background-color: #329664;
+}
+
+.progress-bar-wrapper {
+    width: 100%;
+    height: 10px;
+    border: 1px solid #CCCCCC;
+}
+
+.progress-bar-fill {
+    height: 10px;
+    width: 85%;
+    transition: width 0.3s;
+}
+
+#assetModal .modal-body {
+    padding: 24px 16px;
+}
+
+.asset-modal-title {
+    color: #285AE1;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.control {
+    width: 100%;
+    border: 1px solid #B0B0B0;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.note {
+    font-size: 12px;
+}
+
+.user div {
+    background-color: #EDF4F9;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-right: 12px;
+    background-color: #7EB1D6;
+}
+
+.data-simulation-container {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.box-left {
+    background-color: #EAF3F4;
+    width: 35%;
+}
+
+@media (max-width: 768px) {
+    .chart {
+        min-height: 35vh;
+    }
+}

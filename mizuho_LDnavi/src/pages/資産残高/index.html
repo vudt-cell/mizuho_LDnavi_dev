@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>資産残高デザイン</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/screen.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="../../assets/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <div class="screen-container">
+    <header class="screen-header-container justify-content-start">
+      <div class="screen-header-content align-items-center px-4 bg-primary-blue color-white justify-content-between">
+        <p class="fs-18 fw-medium color-white">結果画面</p>
+        <div class="fs-10 d-flex justify-content-end">
+          <a class="d-flex flex-column align-items-center me-2 color-white">
+            <img src="../../assets/images/download.svg" alt="">
+            データ保存
+          </a>
+          <a href="../Top/index.html" class="d-flex flex-column align-items-center color-white">
+            <img src="../../assets/images/menu.svg" alt="">
+            メニュー
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="screen-content-container">
+      <div class="chart-container py-4 px-3">
+        <div>
+          <p class="fs-18 fw-medium mb-2">資産残高</p>
+
+          <p class="mb-3">
+            <span class="number fs-24" id="label-age">100</span> 歳
+            <span class="number fs-20 ms-2" id="label-year">2075</span> 年
+          </p>
+
+          <div class="d-flex px-3 py-4 bg-light-gray br-12 mb-3">
+            <div style="width: 50%;">
+              <div class="d-flex align-items-center fs-12">
+                <div class="chart-icon blue me-1"></div>
+                今のプラン
+              </div>
+              <div>
+                <span class="number fs-32">-1,200</span>
+                <span class="fw-semibold">万円</span>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex align-items-center fs-12">
+                <div class="chart-icon green me-1"></div>
+                今のプラン
+              </div>
+              <div>
+                <span class="number fs-32" id="counter">-1,200</span>
+                <span class="fw-semibold">万円</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart mb-3">
+          <canvas id="assetChart"></canvas>
+        </div>
+        <!-- <canvas class="mt-3" id="assetChart"></canvas> -->
+
+        <div class="d-flex justify-content-end align-items-center mb-4">
+          <p class="fs-12 me-3">
+            インフレ率 <span class="number fs-20">0.0</span>%
+          </p>
+          <p class="fs-12">
+            想定生涯年齢 <span class="number fs-20">100</span>歳
+          </p>
+          <img src="../../assets/images/edit.svg" class="ms-3" alt="" data-bs-toggle="modal"
+            data-bs-target="#assetModal">
+        </div>
+
+        <div class="mb-4">
+          <p class="fs-12 mb-12">
+            <span class="number fs-20">85</span>% 入力済
+          </p>
+          <div class="progress-bar-wrapper bg-light-gray br-4 mb-3">
+            <div class="progress-bar-fill blue br-4"></div>
+          </div>
+          <div class="d-flex justify-content-end">
+            <button class="btn-top btn-primary fs-12" style="width: 40%;">
+              入力内容一覧
+              <img src="../../assets/images/right-arrow.svg" alt="">
+            </button>
+          </div>
+        </div>
+
+        <div class="d-flex user">
+          <img src="../../assets/images/avatar.png" alt="" class="avatar">
+          <div class="p-3 fs-14">
+            もしもの時、いくら必要？<br>
+            「<a class="underline">そなえるお金を考える</a>」で確認しましょう！
+          </div>
+        </div>
+
+        <div class="px-3 pt-4">
+          <button class="btn-top btn-secondary mb-3">
+            <img src="../../assets/images/user.svg" alt="">
+            アカウント登録して保存
+          </button>
+          <a class="btn-top">
+            アカウントをお持ちの方はログイン
+          </a>
+        </div>
+      </div>
+
+      <div class="py-4 px-3 bg-light-gray">
+        <div class="mb-3 fs-14">
+          シミュレーションデータ
+        </div>
+        <div class="d-flex mb-4 data-simulation-container">
+          <div class="box-left">
+          </div>
+          <div class="bg-white d-flex px-3 py-3 justify-content-between" style="width: 100%;">
+            <div class="me-3">
+              <p class="mb-1 color-blue fs-14 fw-medium">イベント年表</p>
+              <p class="fs-12">
+                ライフイベントを一覧で確認して <br>
+                計画の見通しを立てられます
+              </p>
+            </div>
+            <img src="../../assets/images/ArrowRightLink.svg" alt="">
+          </div>
+        </div>
+        <div class="d-flex data-simulation-container">
+          <div class="box-left">
+          </div>
+          <div class="bg-white d-flex px-3 py-3 justify-content-between" style="width: 100%;">
+            <div class="me-3">
+              <p class="mb-1 color-blue fs-14 fw-medium">キャッシュフロー表</p>
+              <p class="fs-12">
+                年ごとの収支や貯蓄推移を整理し <br>
+                将来の資金計画を確認できます
+              </p>
+            </div>
+            <img src="../../assets/images/ArrowRightLink.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="py-4 px-3">
+        <p></p>
+      </div>
+    </main>
+  </div>
+
+  <!-- asset Modal -->
+  <div class="modal fade" id="assetModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-custom">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <div class="asset-modal-title mb-4">
+            シミュレーション設定
+          </div>
+
+          <div class="d-flex flex-column mb-4">
+            <div class="mb-3">
+              <p class="mb-3 fs-14 fw-medium">想定生涯年齢</p>
+              <div class="d-flex align-items-center">
+                <input type="text" class="me-2 control" value="100" id="age">歳
+              </div>
+              <p class="note">
+                現在の年齢：73歳　平均寿命：87歳
+              </p>
+            </div>
+
+            <div class="mb-3">
+              <p class="mb-3 label">インフレ率</p>
+              <div class="d-flex align-items-center">
+                <input type="text" class="me-2 control" value="0.0" id="rate">%
+              </div>
+              <p class="note">
+                過去10年：3.1%　過去30年：3.2%
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <button class="btn-top btn-secondary me-3" data-bs-dismiss="modal">キャンセル</button>
+            <button class="btn-top btn-primary" onclick="calculateAsset()" data-bs-dismiss="modal">確定</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
