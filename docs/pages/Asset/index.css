@@ -325,9 +325,21 @@
     }
 }
 
-@media (min-width: 768px) {
-    .m-flex-column {
-        flex-direction: row;
+@media (min-width: 768px) and (max-width: 1024px) {
+    .download {
+        background-color: #FFFFFF;
+        padding: 8px 17px;
+        gap: 2px;
+        color: #08287F;
+        border-radius: 9999px;
+    }
+
+    .red {
+        background-color: #285AE1;
+        padding: 8px 9px;
+        gap: 2px;
+        color: #FFFFFF;
+        border-radius: 9999px;
     }
 
     .m {
@@ -336,6 +348,10 @@
 
     .p {
         display: none !important;
+    }
+
+    .m-flex-column {
+        flex-direction: row;
     }
 
     .screen-header-content {
