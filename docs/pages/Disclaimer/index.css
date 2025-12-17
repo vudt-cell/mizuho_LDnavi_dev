@@ -1,0 +1,164 @@
+/* CSS for section section:Disclaimer */
+body {
+    background-color: #f3f3f3;
+}
+
+.disclaimer-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.disclaimer-container {
+    /* max-width: 1440px; */
+    width: 100%;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* padding-bottom: 96px; */
+    /* Space for the footer */
+    /* min-height: 100vh; */
+}
+
+.disclaimer-content {
+    max-width: 768px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.disclaimer-header {
+    padding: 8px 16px 0;
+}
+
+.logo-image {
+    width: 77px;
+    height: 39px;
+    display: block;
+}
+
+.disclaimer-main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title-bar {
+    background-color: #283296;
+    padding: 12px;
+}
+
+.title-text {
+    color: #ffffff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+}
+
+.scroll-area {
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    padding: 24px 16px;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.terms-text {
+    color: #121212;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.disclaimer-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 16px 32px;
+    border-top: 1px solid #efefef;
+    z-index: 10;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 768px;
+}
+
+.btn {
+    flex: 1;
+    max-width: 378px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 9999px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    cursor: pointer;
+    /* transition: background-color 0.2s, color 0.2s, border-color 0.2s; */
+}
+
+.btn-outline {
+    background-color: #ffffff;
+    border: 1px solid #08287f;
+    color: #08287f;
+}
+
+.btn-outline:hover {
+    background-color: #f0f3ff;
+}
+
+.btn-disabled {
+    background-color: #f3f3f3;
+    border: 1px solid #f3f3f3;
+    color: #737373;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .disclaimer-section {
+        padding: 0 16px;
+    }
+
+    .title-text{
+        font-size: 20px;
+    }
+
+    .terms-text{
+        font-size: 14px;
+    }
+
+    .disclaimer-footer {
+        padding: 16px;
+    }
+
+    .disclaimer-footer a {
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
